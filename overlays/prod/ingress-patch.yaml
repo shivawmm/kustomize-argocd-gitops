@@ -7,3 +7,15 @@ metadata:
 spec:
   rules:
     - host: weather-dashboard-prod.local
+
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+
+            backend:
+              service:
+                name: weather-dashboard-service
+
+                port:
+                  number: 80
