@@ -1,13 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: kustomize-argocd-demo
+namespace: kustomize-argocd-prod
 
 resources:
   - ../../base
 
 patchesStrategicMerge:
   - replica-patch.yaml
+  - ingress-patch.yaml
 
 images:
   - name: shivawmm1810/weather-dashboard-app
