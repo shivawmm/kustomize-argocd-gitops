@@ -11,4 +11,4 @@ patches:
 
 images:
   - name: shivawmm1810/weather-dashboard-app
-    newTag: "a109feb2b842c612a1f8c2f8f6305d07c3165a7e"
+    newTag: "03f883a1fa3a9dcf867547e683d976d6fd0fc6eb"
