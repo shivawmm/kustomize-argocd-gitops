@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: weather-dashboard-service
+  namespace: kustomize-argocd-demo
+
+spec:
+  selector:
+    app: weather-dashboard-app
+
+  ports:
+    - port: 80
+      targetPort: 3000
+
+  type: ClusterIP

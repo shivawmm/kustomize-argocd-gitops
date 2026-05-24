@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: weather-dashboard-app
+  namespace: kustomize-argocd-demo
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: weather-dashboard-app
+
+  template:
+    metadata:
+      labels:
+        app: weather-dashboard-app
+
+    spec:
+      containers:
+        - name: weather-dashboard-app
+
+          image: shivawmm1810/weather-dashboard-app:latest
+
+          ports:
+            - containerPort: 3000
