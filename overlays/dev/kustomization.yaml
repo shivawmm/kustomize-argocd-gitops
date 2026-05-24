@@ -11,4 +11,4 @@ patchesStrategicMerge:
 
 images:
   - name: shivawmm1810/weather-dashboard-app
-    newTag: latest
+    newTag: "a109feb2b842c612a1f8c2f8f6305d07c3165a7e"
