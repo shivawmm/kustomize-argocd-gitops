@@ -6,8 +6,8 @@ namespace: kustomize-argocd-demo
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - replica-patch.yaml
+patches:
+  - path: replica-patch.yaml
 
 images:
   - name: shivawmm1810/weather-dashboard-app

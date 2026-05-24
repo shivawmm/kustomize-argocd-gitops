@@ -6,9 +6,9 @@ namespace: kustomize-argocd-prod
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - replica-patch.yaml
-  - ingress-patch.yaml
+patches:
+  - path: replica-patch.yaml
+  - path: ingress-patch.yaml
 
 images:
   - name: shivawmm1810/weather-dashboard-app
