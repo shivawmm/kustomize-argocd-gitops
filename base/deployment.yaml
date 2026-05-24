@@ -3,7 +3,6 @@ kind: Deployment
 
 metadata:
   name: weather-dashboard-app
-  namespace: kustomize-argocd-demo
 
 spec:
   replicas: 1

@@ -3,7 +3,6 @@ kind: Ingress
 
 metadata:
   name: weather-dashboard-ingress
-  namespace: kustomize-argocd-demo
 
 spec:
   ingressClassName: nginx
